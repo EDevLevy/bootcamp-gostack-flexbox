@@ -1,0 +1,41 @@
+html,body,#app{
+height: 100%;
+margin: 0;
+}
+/*
+flex-direction: column; de baixo pra cima
+align-items: center; alinha os itens no eixo contrario do flex direction
+justify-content: center ;alinha no mesmo eixo do flex direction 
+align-contend: aplicado qdo o elemento tem mais de um linha
+flex:wrap = define o comportamento ao quebar a linha
+*/ 
+#app{
+  display: flex;
+  flex-direction: column;
+} 
+
+/*
+flex-grow: informa a capacidade de se redimensionar
+flex:1 = informa que o elemento pode redimensionar e espremer
+*/
+
+.box{
+  width: 250px;
+  height: 60px;
+  background: #f00;
+  margin: 5px;
+  flex: 1;
+}
+.red{
+  background: red;
+  order: 2;
+}
+.green{
+  background: #0f0;
+  order:1
+}
+
+.blue{
+  background: blue;
+  order:3
+}
